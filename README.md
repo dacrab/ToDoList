@@ -1,5 +1,5 @@
 # To-Do List App
-[🔗 Try the live demo](https://dacrab.github.io/todolist)
+🔗 [Try the live demo](https://dacrab.github.io/todolist)
 
 This simple To-Do List app allows you to manage your tasks efficiently. You can add, edit, mark as completed, and remove tasks.
 
