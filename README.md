@@ -1,5 +1,7 @@
 # To-Do List App
 
+#[🔗 Try the live demo](https://dacrab.github.io/todolist)
+
 This simple To-Do List app allows you to manage your tasks efficiently. You can add, edit, mark as completed, and remove tasks.
 
 ## Getting Started
@@ -18,8 +20,6 @@ This simple To-Do List app allows you to manage your tasks efficiently. You can 
 - CSS
 - JavaScript
 
-- [🔗 Try the live demo](https://dacrab.github.io/todolist)
 
 ## Author
 V.Kavouras
-Feel free to customize this app and make it your own!
