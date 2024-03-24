@@ -3,21 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/ee64ada057.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
+    <link rel="icon" type="image/png" href="./assets/notepad.png"> <!-- Change path to your icon file -->
     <title>ToDo</title>
   </head>
   <body>
     <section class="todo">
-      <h2>To-do list</h2>
+      <div class="header">
+        <h2>To-do list</h2>
+        <div class="gif"><img src="./assets/notebook.gif" alt="notebook"></div>
+      </div>
       <div class="input">
         <input
           type="text"
           class="input-field"
           id="todoInput"
-          placeholder="Add a new todo"
-        />
-        <button class="btn">Add</button>
+          placeholder="Add a new To-Do"
+        />       
+        <button class="btn"><i class="fa-solid fa-plus"></i> Add</button>
       </div>
       <ul class="scroll">
         <li id="todoList"></li>
@@ -26,14 +31,14 @@
         <hr class="counter" />
         <div class="counter-container">
           <p><span id="todoCount">0</span> items total</p>
-          <button id="deleteButton">Delete All</button>
+          <button id="deleteButton"><i class="fa-solid fa-trash"></i> Delete All</button>
         </div>
       </div>
     </section>
     <footer>
       <div class="footer">
         <p class="made-by">Made By</p>
-        <p class="author">DaCrab</p>
+        <p class="author"> <a href="https://github.com/dacrab">DaCrab</a></p>
       </div>
     </footer>
   </body>

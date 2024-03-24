@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 :root {
   --gradient: linear-gradient(
     180deg,
@@ -5,12 +7,11 @@
     #163e92 100%
   );
 
-  
   --dark: #001747;
   --grey: #b1bacb;
   --grey-border: rgba(210, 210, 210, 0.75);
   --grey-light: #eeeeee;
-  --grey-dark: $405175;
+  --grey-dark: #405175;
   --blue: #2d70fd;
   --green: #00d8a7;
   --white: #ffffff;
@@ -27,6 +28,7 @@ body {
 }
 
 .btn {
+  cursor: pointer;
   color: var(--white);
   font-size: 1.1rem;
   padding: 0.7rem 1.5rem;
@@ -51,6 +53,7 @@ p {
 /* Todo Container */
 
 .todo {
+  font-family: "Poppins" , sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -61,6 +64,17 @@ p {
   width: 60%;
   box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
   max-width: 30rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this line to center horizontally */
+}
+.gif img{
+  align-items: center;
+  width: 50px;
+  height: auto;
+  margin-left: 10px;
 }
 
 h2 {
@@ -163,6 +177,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .counter-container button {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   color: var(--grey);
@@ -170,8 +185,9 @@ input[type="checkbox"]:checked::before {
 }
 
 .footer {
+  font-family: "Poppins" , sans-serif;
   display: flex;
-  gap: 1.8rem;
+  gap: 0.5rem;
   background-color: var(--white);
   padding: 1.2rem;
   border-radius: 0.5rem;
@@ -191,7 +207,14 @@ input[type="checkbox"]:checked::before {
   font-weight: bold;
 }
 
+.author a{
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .scroll {
+  overflow-y: auto;
   height: 15rem;
   scrollbar-width: thin;
 }
@@ -207,4 +230,56 @@ input[type="checkbox"]:checked::before {
 
 .scroll::-webkit-scrollbar-track {
   display: none;
+}
+.scroll.scrollbar-visible::-webkit-scrollbar-track {
+  display: block;
+}
+
+/* Dark Mode Styles */
+
+body.dark-mode {
+  --gradient: linear-gradient(180deg, #192734, #22364f);
+  --dark: #ffffff;
+  --grey: #6c757d;
+  --grey-border: rgba(110, 110, 110, 0.75);
+  --grey-light: #373f52;
+  --grey-dark: #202c3d;
+  --blue: #6bb1e1;
+  --green: #00d8a7;
+  --white: #000000;
+}
+
+body.dark-mode .btn {
+  background-color: var(--blue);
+}
+
+body.dark-mode h2 {
+  color: var(--white);
+}
+
+body.dark-mode .input-field {
+  border: 0.06rem solid var(--grey-border);
+}
+
+body.dark-mode input[type="text"]::placeholder {
+  color: var(--grey);
+}
+
+body.dark-mode #todoList p {
+  color: var(--white);
+}
+
+body.dark-mode .disabled {
+  color: #8f98a8;
+}
+
+body.dark-mode input[type="checkbox"]::before {
+  border: 0.06rem solid var(--grey-border);
+  color: transparent;
+}
+
+body.dark-mode input[type="checkbox"]:checked::before {
+  color: var(--dark);
+  background-color: var(--green);
+  border: 0.06rem solid var(--green);
 }
