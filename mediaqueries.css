@@ -1,0 +1,62 @@
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .btn-text{
+    display: none; /*Hides Button Text*/
+  }
+
+  .btn,
+  #deleteButton {
+    padding: 10px; /* Adjust padding as needed */
+    justify-content: center; /* Center the icon */
+  }
+}
+/* For mobile devices */
+@media (max-width: 767px) {
+  .header .gif {
+    display: none; /* Hide the gif on smaller screens */
+  }
+
+
+
+  .input-field,
+  .btn {
+    font-size: 14px;
+  }
+
+  .scroll {
+    max-height: 200px;
+  }
+}
+
+/* For tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .input-field,
+  .btn {
+    font-size: 16px;
+  }
+
+  .scroll {
+    max-height: 250px;
+  }
+}
+
+/* For desktops */
+@media (min-width: 1025px) {
+  .todo {
+    max-width: 800px;
+  }
+
+  .header h2 {
+    font-size: 24px;
+  }
+
+  .input-field,
+  .btn {
+    font-size: 18px;
+  }
+
+  .scroll {
+    max-height: 400px;
+  }
+}

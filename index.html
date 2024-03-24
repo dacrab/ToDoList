@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/ee64ada057.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ee64ada057.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css">
     <script src="./script.js" defer></script>
-    <link rel="icon" type="image/png" href="./assets/notepad.png"> <!-- Change path to your icon file -->
+    <link rel="icon" type="image/png" href="./assets/notepad.png"> 
     <title>ToDo</title>
   </head>
   <body>
     <section class="todo">
       <div class="header">
         <h2>To-do list</h2>
-        <div class="gif"><img src="./assets/notebook.gif" alt="notebook"></div>
+        <div class="gif"><img src="./assets/notebook.gif" style="height: 100px; width: 100px;" alt="notebook"></div>
       </div>
       <div class="input">
         <input
@@ -22,7 +23,10 @@
           id="todoInput"
           placeholder="Add a new To-Do"
         />       
-        <button class="btn"><i class="fa-solid fa-plus"></i> Add</button>
+        <button class="btn">
+          <i class="fa-solid fa-plus"></i>
+          <span class="btn-text">Add</span>
+        </button>
       </div>
       <ul class="scroll">
         <li id="todoList"></li>
@@ -31,7 +35,10 @@
         <hr class="counter" />
         <div class="counter-container">
           <p><span id="todoCount">0</span> items total</p>
-          <button id="deleteButton"><i class="fa-solid fa-trash"></i> Delete All</button>
+          <button id="deleteButton">
+            <i class="fa-solid fa-trash"></i>
+            <span class="btn-text">Delete All</span>
+          </button>
         </div>
       </div>
     </section>

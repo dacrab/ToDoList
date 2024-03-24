@@ -70,12 +70,6 @@ p {
   align-items: center;
   justify-content: center; /* Add this line to center horizontally */
 }
-.gif img{
-  align-items: center;
-  width: 50px;
-  height: auto;
-  margin-left: 10px;
-}
 
 h2 {
   text-transform: uppercase;
@@ -246,11 +240,12 @@ body.dark-mode {
   --grey-dark: #202c3d;
   --blue: #6bb1e1;
   --green: #00d8a7;
-  --white: #000000;
+  --white: #131313;
 }
 
 body.dark-mode .btn {
   background-color: var(--blue);
+  color: var(--white); /* Ensure text color remains white */
 }
 
 body.dark-mode h2 {
@@ -259,6 +254,7 @@ body.dark-mode h2 {
 
 body.dark-mode .input-field {
   border: 0.06rem solid var(--grey-border);
+  color: var(--white); /* Ensure text color remains white */
 }
 
 body.dark-mode input[type="text"]::placeholder {
