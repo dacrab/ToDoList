@@ -15,6 +15,7 @@
   --blue: #2d70fd;
   --green: #00d8a7;
   --white: #ffffff;
+  --text: black;
 }
 
 body {
@@ -240,7 +241,8 @@ body.dark-mode {
   --grey-dark: #202c3d;
   --blue: #6bb1e1;
   --green: #00d8a7;
-  --white: #131313;
+  --white: #1a1a1a;
+  --text: white;
 }
 
 body.dark-mode .btn {
@@ -248,12 +250,25 @@ body.dark-mode .btn {
   color: var(--white); /* Ensure text color remains white */
 }
 
-body.dark-mode h2,
-body.dark-mode .input-field,
-body.dark-mode input[type="text"]::placeholder,
-body.dark-mode #todoList p,
-body.dark-mode .disabled {
+body.dark-mode h2 {
+  color: var(--text);
+}
+
+body.dark-mode .input-field {
+  border: 0.06rem solid var(--grey-border);
   color: var(--white); /* Ensure text color remains white */
+}
+
+body.dark-mode input[type="text"]::placeholder {
+  color: var(--grey);
+}
+
+body.dark-mode #todoList p {
+  color: var(--text);
+}
+
+body.dark-mode .disabled {
+  color: #8f98a8;
 }
 
 body.dark-mode input[type="checkbox"]::before {
