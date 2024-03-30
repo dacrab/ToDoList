@@ -15,6 +15,15 @@ window.addEventListener('load', () => {
       document.body.classList.remove('dark-mode');
     }
   });
+
+  // JavaScript to add or remove class based on conditions
+  const scrollElement = document.querySelector('.scroll');
+
+  // Add class to show scrollbar when needed
+  scrollElement.classList.add('scrollbar-visible');
+
+  // Remove class to hide scrollbar when not needed
+  scrollElement.classList.remove('scrollbar-visible');
 });
 
 // Retrieve todo from local storage or initialize an empty array
@@ -104,12 +113,3 @@ function deleteAllTasks() {
 function saveToLocalStorage() {
   localStorage.setItem("todo", JSON.stringify(todo));
 }
-// JavaScript to add or remove class based on conditions
-const scrollElement = document.querySelector('.scroll');
-
-// Add class to show scrollbar when needed
-scrollElement.classList.add('scrollbar-visible');
-
-// Remove class to hide scrollbar when not needed
-scrollElement.classList.remove('scrollbar-visible');
-

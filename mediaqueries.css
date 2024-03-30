@@ -1,6 +1,10 @@
 /* Media Queries */
 
 @media (max-width: 600px) {
+  .header .gif {
+    display: none; /* Hide the gif on smaller screens */
+  }
+
     .btn-text{
     display: none; /*Hides Button Text*/
   }
@@ -13,11 +17,6 @@
 }
 /* For mobile devices */
 @media (max-width: 767px) {
-  .header .gif {
-    display: none; /* Hide the gif on smaller screens */
-  }
-
-
 
   .input-field,
   .btn {
@@ -43,9 +42,7 @@
 
 /* For desktops */
 @media (min-width: 1025px) {
-  .todo {
-    max-width: 800px;
-  }
+
 
   .header h2 {
     font-size: 24px;
