@@ -1,34 +1,30 @@
 /* Media Queries */
 
-@media (max-width: 600px) {
-  .header .gif {
-    display: none; /* Hide the gif on smaller screens */
-  }
+/* Common styles across all screen sizes */
+.input-field,
+.btn {
+  font-size: 14px; /* Base font size */
+}
 
-    .btn-text{
-    display: none; /*Hides Button Text*/
+.scroll {
+  max-height: 200px; /* Base scroll height */
+}
+
+/* Small screens and mobile devices */
+@media (max-width: 767px) {
+  .header .gif,
+  .btn-text {
+    display: none;
   }
 
   .btn,
   #deleteButton {
-    padding: 10px; /* Adjust padding as needed */
-    justify-content: center; /* Center the icon */
-  }
-}
-/* For mobile devices */
-@media (max-width: 767px) {
-
-  .input-field,
-  .btn {
-    font-size: 14px;
-  }
-
-  .scroll {
-    max-height: 200px;
+    padding: 10px;
+    justify-content: center;
   }
 }
 
-/* For tablets */
+/* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
   .input-field,
   .btn {
@@ -40,10 +36,8 @@
   }
 }
 
-/* For desktops */
+/* Desktops and larger screens */
 @media (min-width: 1025px) {
-
-
   .header h2 {
     font-size: 24px;
   }

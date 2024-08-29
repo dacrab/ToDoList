@@ -1,52 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/ee64ada057.js" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./mediaqueries.css">
-    <script src="./script.js" defer></script>
-    <link rel="icon" type="image/png" href="./assets/notepad.png"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
-  </head>
-  <body>
-    <section class="todo">
-      <div class="header">
-        <h2>To-do list</h2>
-        <div class="gif"><img src="./assets/notebook.gif" style="height: 100px; width: 100px;" alt="notebook"></div>
-      </div>
-      <div class="input">
-        <input
-          type="text"
-          class="input-field"
-          id="todoInput"
-          placeholder="Add a new To-Do"
-        />       
-        <button class="btn">
-          <i class="fa-solid fa-plus"></i>
-          <span class="btn-text">Add</span>
-        </button>
-      </div>
-      <ul class="scroll">
-        <li id="todoList"></li>
-      </ul>
-      <div>
-        <hr class="counter" />
-        <div class="counter-container">
-          <p><span id="todoCount">0</span> items total</p>
-          <button id="deleteButton">
-            <i class="fa-solid fa-trash"></i>
-            <span class="btn-text">Delete All</span>
-          </button>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/240/notepad.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <script src="https://kit.fontawesome.com/ee64ada057.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main class="todo">
+        <header>
+            <h1><i class="fas fa-tasks" aria-hidden="true"></i> To-do list</h1>
+        </header>
+        <form id="todoForm" class="input">
+            <input type="text" id="todoInput" class="input-field" placeholder="Add a new To-Do" required>
+            <button type="submit" class="btn">
+                <i class="fa-solid fa-plus" aria-hidden="true"></i>
+                <span class="btn-text">Add</span>
+            </button>
+        </form>
+        
+        <div class="scroll">
+            <ul id="todoList"></ul>
         </div>
-      </div>
-    </section>
+        
+        <div class="counter-section">
+            <hr>
+            <div class="counter-container">
+                <p><i class="fas fa-list-ul" aria-hidden="true"></i> <span id="todoCount">0</span> items total</p>
+                <button id="deleteButton" class="btn-delete">
+                    <i class="fa-solid fa-trash" aria-hidden="true"></i>
+                    <span class="btn-text">Delete All</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    
     <footer>
-      <div class="footer">
-        <p class="made-by">Made By</p>
-        <p class="author"> <a href="https://github.com/dacrab">DaCrab</a></p>
-      </div>
+        <p><i class="fab fa-github" aria-hidden="true"></i> Made By <a href="https://github.com/dacrab" target="_blank" rel="noopener noreferrer">DaCrab</a></p>
     </footer>
-  </body>
+</body>
 </html>
